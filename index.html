@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Proyecto pagina web</title>
+  <meta name="description" content="mi pagina web">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+  <header id="site-header" class="site-header">
+    <div class="header-inner">
+      <a href="#home" class="brand">
+        <img src="img/logoimage.png" alt="Logo" class="header-logo">
+      </a>
+
+
+      <button id="nav-toggle" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false"
+        aria-label="Abrir menú">
+      </button>
+      <nav id="primary-nav" class="primary-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home">Inicio</a></li>
+          <li class="nav-item"><a href="#about">Sobre</a></li>
+          <li class="nav-item"><a href="#review">Reseña</a></li>
+          <li class="nav-item"><a href="#gallery">Galería</a></li>
+          <li class="nav-item"><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="parallax-hero">
+      <div class="hero-content">
+        <h1>Bienvenido a mi pagina</h1>
+        <p>Videojuegos y demas.</p>
+      </div>
+    </section>
+
+
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2>Sobre nosotros</h2>
+        <p>Somos un grupo de clase que crea una pagina web para un proyecto de Lenguaje de marcas</p>
+
+        <div class="accordion">
+          <button class="accordion-toggle" aria-expanded="false">Leer más</button>
+          <div class="accordion-panel">
+            <p>Esto solo es para probarlo,no se que poner :,c</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services-section">
+      <div class="container">
+        <h2>Servicios</h2>
+        <div class="service-grid">
+          <article class="service-card">
+            <i class="fa-solid fa-gamepad service-icon"></i>
+            <h3>Videojuegos</h3>
+            <p> Todo tipo de videojuegos</p>
+          </article>
+
+          <article class="service-card">
+            <i class="fa-solid fa-user service-icon"></i>
+            <h3>Opiniones</h3>
+            <p>Las opiniones mas fieles y sinceras acerca de los videojuegos</p>
+          </article>
+
+          <article class="service-card">
+            <i class="fa-solid fa-star service-icon"></i>
+            <h3>Fiabilidad</h3>
+            <p>Sinceridad,fiabilidad y honestidad</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <h2>Galería</h2>
+        <p>Una colección de imágenes.</p>
+        <div id="gallery-grid" class="gallery-grid">
+
+          <figure class="gallery-item">
+            <img src="img/videogames1.jpg" alt="some games">
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/videogames2.jpg" alt="more games">
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/videogames3.jpg" alt="controllers">
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/videogames4.jpg" alt="two games">
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/videogames5.jpg" alt="variety">
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/videogames6.jpg" alt="another games">
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/videogames7.jpg" alt="minecraft">
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/videogames8.png" alt="players">
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/videogames9.png" alt="consoles">
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/videogames10.jpg" alt="gamepads">
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="review" class="section crud-section">
+      <div class="container">
+        <h2>Deja tu Reseña</h2>
+        <p>Añade una reseña de tu juego favorito.</p>
+
+        <form id="crud-form" class="contact-form">
+          <label for="crud-title">Nombre del Juego</label>
+          <input id="crud-title" type="text" placeholder="Ej: Cyberpunk 2077" required>
+          <span class="error-message" id="error-crud-title"></span>
+
+          <label for="crud-review">Tu Reseña</label>
+          <textarea id="crud-review" rows="3" placeholder="Escribe tu reseña..." required></textarea>
+          <span class="error-message" id="error-crud-review"></span>
+
+          <button type="submit" class="button-secondary">Añadir Reseña</button>
+        </form>
+
+        <hr class="crud-divider">
+
+        <h3>Lista de Reseñas</h3>
+        <div id="crud-list" class="crud-list">
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2>Contacto</h2>
+        <p>Rellena el formulario y te contestaremos.</p>
+        <form id="contact-form" class="contact-form">
+          <label for="contact-name">Nombre</label>
+          <input id="contact-name" name="name" type="text" placeholder="Tu nombre" required>
+          <span class="error-message" id="error-name"></span>
+
+          <label for="contact-email">Correo</label>
+          <input id="contact-email" name="email" type="email" placeholder="email@ejemplo.es" required>
+          <span class="error-message" id="error-email"></span>
+
+          <label for="contact-subject">Asunto</label>
+          <input id="contact-subject" name="subject" type="text" placeholder="Asunto de tu mensaje" required>
+          <span class="error-message" id="error-subject"></span>
+
+          <label for="contact-message">Mensaje</label>
+          <textarea id="contact-message" name="message" rows="4" placeholder="Escribe tu mensaje..."
+            required></textarea>
+          <span class="error-message" id="error-message"></span>
+
+          <button type="submit" class="button-secondary">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+  <footer id="site-footer" class="site-footer">
+    <div class="footer-inner container">
+
+      <div class="footer-column">
+        <h4>Sobre</h4>
+        <p class="footer-about">Soy un alumno creando un proyecto web para Lenguaje de Marcas.</p>
+        <p>&copy; 2025 Pagina web</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Enlaces Rápidos</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#review">Reseña</a></li>
+          <li><a href="#gallery">Galería</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Síguenos</h4>
+        <div class="footer-right">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+
+</html>
